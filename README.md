@@ -19,7 +19,7 @@ This package contains the functionality to select and hide automatically the fol
 
 - Znuny4OTRS-Repo
 
-- OTRS 5
+- OTRS 4
 
 **Installation**
 

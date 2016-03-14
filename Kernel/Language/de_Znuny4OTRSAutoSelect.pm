@@ -1,4 +1,5 @@
 # --
+# Kernel/Language/de_Znuny4OTRSAutoSelect.pm - the German translation of the texts of Znuny4OTRSAutoSelect
 # Copyright (C) 2012-2016 Znuny GmbH, http://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see

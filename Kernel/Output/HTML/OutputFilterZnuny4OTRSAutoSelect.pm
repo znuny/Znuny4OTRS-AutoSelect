@@ -1,4 +1,5 @@
 # --
+# Kernel/Output/HTML/OutputFilterZnuny4OTRSAutoSelect.pm.pm
 # Copyright (C) 2012-2016 Znuny GmbH, http://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -6,7 +7,7 @@
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
-package Kernel::Output::HTML::FilterElementPost::Znuny4OTRSAutoSelect;
+package Kernel::Output::HTML::OutputFilterZnuny4OTRSAutoSelect;
 
 use strict;
 use warnings;
