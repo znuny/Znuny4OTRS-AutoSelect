@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_package version="1.0">
+    <Name>Znuny4OTRS-AutoSelect</Name>
+    <Version>1.1.8</Version>
+    <ChangeLog Version="1.1.8" Date="2016-01-28 15:27:05 UTC">Added SelectAlways function.</ChangeLog>
+    <ChangeLog Version="1.1.7" Date="2016-01-27 08:58:20 UTC">Fixed issue #4 - outputfilter in wrong directory in otrs 5.</ChangeLog>
+    <ChangeLog Version="1.1.6" Date="2016-01-18 13:36:56 UTC">Improved get function to return all possible values on parameter 'PossibleValues'.</ChangeLog>
+    <ChangeLog Version="1.1.5" Date="2016-01-18 13:36:20 UTC">Fixed endless loop in customer interface.</ChangeLog>
+    <ChangeLog Version="1.1.4" Date="2016-01-18 12:10:32 UTC">Fixed init function parameter check.</ChangeLog>
+    <ChangeLog Version="1.1.3" Date="2016-01-18 11:41:10 UTC">- Fixed bug: Invalid usage of FieldID instead of Attribute name.&#13;
+- Fixed SysConfig groups.&#13;
+- Improved documentations.</ChangeLog>
+    <ChangeLog Version="1.1.2" Date="2016-01-14 12:52:12 UTC">Fixed bug: 'not hash element'. Tieded and added documentation for dynamic fields.</ChangeLog>
+    <ChangeLog Version="1.1.1" Date="2016-01-14 08:37:07 UTC">Fixed bug: Added return to stop loop earlier. Added hide and show function to Core.Form.Znuny4OTRSInput.</ChangeLog>
+    <ChangeLog Version="1.0.2" Date="2016-01-14 08:31:42 UTC">Fixed bug: Added return to stop loop earlier.&#13;
+Added hide and show function to Core.Form.Znuny4OTRSInput.</ChangeLog>
+    <Framework>5.0.x</Framework>
+    <PackageRequired Version="3.0.12">Znuny4OTRS-Repo</PackageRequired>
+    <Vendor>Znuny GmbH</Vendor>
+    <URL>http://znuny.com/</URL>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <Description Lang="en">This package contains the functionality to hide the fields Queue, SLA and Service, if only one value is available.</Description>
+    <Description Lang="de">Dieses Paket enthält die Funktionalität die Felder Queue, SLA und Service auszublenden, wenn diese nur einen Wert enthalten.</Description>
+    <Filelist>
+        <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRSAutoSelect.xml"/>
+        <File Permission="644" Location="Kernel/Language/de_Znuny4OTRSAutoSelect.pm"/>
+        <File Permission="644" Location="Kernel/Output/HTML/FilterElementPost/Znuny4OTRSAutoSelect.pm"/>
+        <File Permission="644" Location="var/httpd/htdocs/js/Core.Agent.Znuny4OTRSAutoSelect.js"/>
+    </Filelist>
+</otrs_package>

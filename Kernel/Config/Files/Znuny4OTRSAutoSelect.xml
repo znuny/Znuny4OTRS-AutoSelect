@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="1.0" init="Application">
+    <ConfigItem Name="Znuny4OTRSAutoSelect###SelectAlways" Required="0" Valid="1">
+        <Description Translatable="1">Defines if all valid FieldIDs should be always selected if only one value is available. If you activate this function, you can't select an empty value (-).</Description>
+        <Group>Znuny4OTRS-AutoSelect</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <Option SelectedID="0">
+                <Item Key="0" Translatable="1">No</Item>
+                <Item Key="1" Translatable="1">Yes</Item>
+            </Option>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Znuny4OTRSAutoSelect###HideFields" Required="0" Valid="1">
+        <Description Translatable="1">Defines if all valid FieldIDs should be hidden if only one value is available.</Description>
+        <Group>Znuny4OTRS-AutoSelect</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <Option SelectedID="0">
+                <Item Key="0" Translatable="1">No</Item>
+                <Item Key="1" Translatable="1">Yes</Item>
+            </Option>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Znuny4OTRSAutoSelect###FieldIDs" Required="1" Valid="1">
+        <Description Translatable="1">This configuration registers possible FieldIDs for autoselection. 1 = active, 0 = deactive. You can also use dynamicfields: DynamicField_NameOfField.</Description>
+        <Group>Znuny4OTRS-AutoSelect</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="PriorityID">1</Item>
+                <Item Key="QueueID">1</Item>
+                <Item Key="ServiceID">1</Item>
+                <Item Key="SLAID">1</Item>
+                <Item Key="StateID">1</Item>
+                <Item Key="TypeID">1</Item>
+                <Item Key="ResponsibleID">1</Item>
+                <Item Key="OwnerID">1</Item>
+                <Item Key="ArticleTypeID">1</Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Frontend::Output::FilterElementPost###Znuny4OTRSAutoSelect" Required="0" Valid="1">
+        <Description Translatable="1">This configuration registers an output filter for js, that automaticly select all valid FieldIDs value if only one is available.</Description>
+        <Group>Znuny4OTRS-AutoSelect</Group>
+        <SubGroup>Core::Web</SubGroup>
+            <Setting>
+                <Hash>
+                    <Item Key="Module">Kernel::Output::HTML::FilterElementPost::Znuny4OTRSAutoSelect</Item>
+                    <Item Key="Templates">
+                        <Hash>
+                            <Item Key="AgentTicketPhone">1</Item>
+                            <Item Key="AgentTicketEmail">1</Item>
+                            <Item Key="AgentTicketActionCommon">1</Item>
+                            <Item Key="AgentTicketFreeText">1</Item>
+                            <Item Key="AgentTicketPriority">1</Item>
+                            <Item Key="AgentTicketOwner">1</Item>
+                            <Item Key="AgentTicketNote">1</Item>
+                            <Item Key="AgentTicketClose">1</Item>
+                            <Item Key="AgentTicketPending">1</Item>
+                            <Item Key="AgentTicketMove">1</Item>
+                            <Item Key="AgentTicketPhoneCommon">1</Item>
+                            <Item Key="AgentTicketBulk">1</Item>
+                            <Item Key="AgentTicketProcess">1</Item>
+                            <Item Key="CustomerTicketProcess">1</Item>
+                            <Item Key="CustomerTicketMessage">1</Item>
+                            <Item Key="AgentTicketCompose">1</Item>
+                            <Item Key="AgentTicketBounce">1</Item>
+                            <Item Key="AgentTicketForward">1</Item>
+                        </Hash>
+                    </Item>
+                </Hash>
+            </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Loader::Agent::CommonJS###237-Znuny4OTRS-AutoSelect" Required="1" Valid="1">
+        <Description Translatable="1">List of JS files to always be loaded for the agent interface.</Description>
+        <Group>Znuny4OTRS-AutoSelect</Group>
+        <SubGroup>Core::Web</SubGroup>
+        <Setting>
+            <Array>
+                <Item>Core.Agent.Znuny4OTRSAutoSelect.js</Item>
+                <Item>Core.Form.Znuny4OTRSInput.js</Item>
+            </Array>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Loader::Customer::CommonJS###237-Znuny4OTRS-AutoSelect" Required="1" Valid="1">
+        <Description Translatable="1">List of JS files to always be loaded for the customer interface.</Description>
+        <Group>Znuny4OTRS-ServiceCatalog</Group>
+        <SubGroup>Core::Web</SubGroup>
+        <Setting>
+            <Array>
+                <Item>Core.Agent.Znuny4OTRSAutoSelect.js</Item>
+                <Item>Core.Form.Znuny4OTRSInput.js</Item>
+            </Array>
+        </Setting>
+    </ConfigItem>
+</otrs_config>
