@@ -14,7 +14,7 @@
     <ChangeLog Version="1.0.1" Date="2015-10-01 09:51:43 UTC">Moved sysconfigs to Application to be able to get overwritten by other custom packages.</ChangeLog>
     <ChangeLog Version="1.0.0" Date="2015-09-25 13:09:22 UTC">First Release.</ChangeLog>
     <Framework>4.0.x</Framework>
-    <PackageRequired Version="2.0.25">Znuny4OTRS-Repo</PackageRequired>
+    <PackageRequired Version="2.0.31">Znuny4OTRS-Repo</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
