@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny4OTRS-AutoSelect</Name>
-    <Version>1.0.9</Version>
+    <Version>1.0.11</Version>
+    <ChangeLog Version="1.0.11" Date="2016-03-16 18:40:26 UTC">Changed source for opm generation (gitlab -&gt; github).</ChangeLog>
     <ChangeLog Version="1.0.9" Date="2016-01-28 15:26:40 UTC">Added SelectAlways function.</ChangeLog>
     <ChangeLog Version="1.0.8" Date="2016-01-18 13:37:04 UTC">Improved get function to return all possible values on parameter 'PossibleValues'.</ChangeLog>
     <ChangeLog Version="1.0.7" Date="2016-01-18 13:36:32 UTC">Fixed endless loop in customer interface.</ChangeLog>
