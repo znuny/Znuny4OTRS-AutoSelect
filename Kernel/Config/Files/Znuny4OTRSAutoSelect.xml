@@ -37,6 +37,7 @@
                 <Item Key="ResponsibleID">1</Item>
                 <Item Key="OwnerID">1</Item>
                 <Item Key="ArticleTypeID">1</Item>
+                <Item Key="ProcessEntityID">1</Item>
             </Hash>
         </Setting>
     </ConfigItem>
