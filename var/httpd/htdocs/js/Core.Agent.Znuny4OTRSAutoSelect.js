@@ -95,8 +95,8 @@ Core.Agent.Znuny4OTRSAutoSelect = (function (TargetNS) {
                     Core.Form.Znuny4OTRSInput.Hide(Attribute);
                 }
             }
-            else {
-                // select first option
+            else if (ConfigHide == 1) {
+                // select show
                 Core.Form.Znuny4OTRSInput.Show(Attribute);
             }
         });
