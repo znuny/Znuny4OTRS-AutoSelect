@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny4OTRS-AutoSelect</Name>
-    <Version>1.1.10</Version>
+    <Version>5.0.1</Version>
+    <ChangeLog Version="5.0.1" Date="2016-09-21 14:36:24 +0200">Fixed issue #1 - Autoselect automatically shows hidden fields also if Znuny4OTRSAutoSelect###HideFields is not in use.</ChangeLog>
     <ChangeLog Version="1.1.10" Date="2016-03-16 18:40:13 UTC">Changed source for opm generation (gitlab -&gt; github).</ChangeLog>
     <ChangeLog Version="1.1.8" Date="2016-01-28 15:27:05 UTC">Added SelectAlways function.</ChangeLog>
     <ChangeLog Version="1.1.7" Date="2016-01-27 08:58:20 UTC">Fixed issue #4 - outputfilter in wrong directory in otrs 5.</ChangeLog>
