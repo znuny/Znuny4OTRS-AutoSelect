@@ -1,6 +1,5 @@
 # --
-# Kernel/Output/HTML/OutputFilterZnuny4OTRSAutoSelect.pm.pm
-# Copyright (C) 2012-2016 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2012-2017 Znuny GmbH, http://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -35,7 +34,11 @@ sub new {
 sub Run {
     my ( $Self, %Param ) = @_;
 
-    my $AutoSelectConfig = $Kernel::OM->Get('Kernel::Config')->Get('Znuny4OTRSAutoSelect');
+    my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+    my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
+    my $JSONObject   = $Kernel::OM->Get('Kernel::System::JSON');
+
+    my $AutoSelectConfig = $ConfigObject->Get('Znuny4OTRSAutoSelect');
 
     my @FieldIDs;
     FIELD:
@@ -44,13 +47,13 @@ sub Run {
         push @FieldIDs, $FieldID;
     }
 
-    return if !IsArrayRefWithData( \@FieldIDs );
-    my $FieldIDs = $Kernel::OM->Get('Kernel::System::JSON')->Encode(
+    return if !@FieldIDs;
+    my $FieldIDs = $JSONObject->Encode(
         Data => \@FieldIDs,
     );
 
     # inject java script
-    $Kernel::OM->Get('Kernel::Output::HTML::Layout')->AddJSOnDocumentComplete(
+    $LayoutObject->AddJSOnDocumentComplete(
         Code =>
             "Core.Agent.Znuny4OTRSAutoSelect.Init({ SelectAlways:$AutoSelectConfig->{SelectAlways}, ConfigHide:$AutoSelectConfig->{HideFields}, FieldIDs:$FieldIDs });"
     );
