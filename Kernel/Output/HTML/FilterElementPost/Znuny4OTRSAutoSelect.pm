@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2012-2016 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2012-2017 Znuny GmbH, http://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -12,8 +12,6 @@ use strict;
 use warnings;
 
 use Kernel::System::VariableCheck qw(:all);
-
-use JSON;
 
 our @ObjectDependencies = (
     'Kernel::Config',
@@ -34,26 +32,38 @@ sub new {
 sub Run {
     my ( $Self, %Param ) = @_;
 
-    my $AutoSelectConfig = $Kernel::OM->Get('Kernel::Config')->Get('Znuny4OTRSAutoSelect');
+    my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+    my $JSONObject   = $Kernel::OM->Get('Kernel::System::JSON');
+    my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
+
+    my $AutoSelectConfig = $ConfigObject->Get('Znuny4OTRSAutoSelect');
+    return if !IsHashRefWithData($AutoSelectConfig);
 
     my @FieldIDs;
     FIELD:
     for my $FieldID ( sort keys %{ $AutoSelectConfig->{FieldIDs} } ) {
-        next FIELD if $AutoSelectConfig->{FieldIDs}{$FieldID} eq 0;
+        next FIELD if $AutoSelectConfig->{FieldIDs}->{$FieldID} == 0;
         push @FieldIDs, $FieldID;
     }
+    return if !@FieldIDs;
 
-    return if !IsArrayRefWithData( \@FieldIDs );
-    my $FieldIDs = $Kernel::OM->Get('Kernel::System::JSON')->Encode(
+    my $FieldIDs = $JSONObject->Encode(
         Data => \@FieldIDs,
     );
 
-    # inject java script
-    $Kernel::OM->Get('Kernel::Output::HTML::Layout')->AddJSOnDocumentComplete(
-        Code =>
-            "Core.Agent.Znuny4OTRSAutoSelect.Init({ SelectAlways:$AutoSelectConfig->{SelectAlways}, ConfigHide:$AutoSelectConfig->{HideFields}, FieldIDs:$FieldIDs });"
+    my $JSBlock = <<"JS";
+Core.Agent.Znuny4OTRSAutoSelect.Init({
+    SelectAlways: $AutoSelectConfig->{SelectAlways},
+    ConfigHide:   $AutoSelectConfig->{HideFields},
+    FieldIDs:     $FieldIDs
+});
+JS
+
+    $LayoutObject->AddJSOnDocumentCompleteIfNotExists(
+        Key  => 'Znuny4OTRSAutoSelect',
+        Code => $JSBlock,
     );
 
-    return $Param{Data};
+    return;
 }
 1;

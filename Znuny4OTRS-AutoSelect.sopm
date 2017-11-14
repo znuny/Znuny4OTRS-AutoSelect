@@ -17,17 +17,18 @@
     <ChangeLog Version="1.1.1" Date="2016-01-14 08:37:07 UTC">Fixed bug: Added return to stop loop earlier. Added hide and show function to Core.Form.Znuny4OTRSInput.</ChangeLog>
     <ChangeLog Version="1.0.2" Date="2016-01-14 08:31:42 UTC">Fixed bug: Added return to stop loop earlier.&#13;
 Added hide and show function to Core.Form.Znuny4OTRSInput.</ChangeLog>
-    <Framework>5.0.x</Framework>
-    <PackageRequired Version="3.0.20">Znuny4OTRS-Repo</PackageRequired>
+    <Framework>6.0.x</Framework>
+    <PackageRequired Version="6.0.3">Znuny4OTRS-Repo</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">This package contains the functionality to hide the fields Queue, SLA and Service, if only one value is available.</Description>
     <Description Lang="de">Dieses Paket enthält die Funktionalität die Felder Queue, SLA und Service auszublenden, wenn diese nur einen Wert enthalten.</Description>
     <Filelist>
-        <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRSAutoSelect.xml"/>
-        <File Permission="644" Location="Kernel/Language/de_Znuny4OTRSAutoSelect.pm"/>
-        <File Permission="644" Location="Kernel/Output/HTML/FilterElementPost/Znuny4OTRSAutoSelect.pm"/>
-        <File Permission="644" Location="var/httpd/htdocs/js/Core.Agent.Znuny4OTRSAutoSelect.js"/>
+        <File Permission="660" Location="Kernel/Config/Files/XML/Znuny4OTRSAutoSelect.xml"/>
+        <File Permission="660" Location="Kernel/Language/de_Znuny4OTRSAutoSelect.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/Znuny4OTRSAutoSelect.pm"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/Znuny4OTRSAutoSelect.t"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/Core.Agent.Znuny4OTRSAutoSelect.js"/>
     </Filelist>
 </otrs_package>
