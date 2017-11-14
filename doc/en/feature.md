@@ -20,7 +20,7 @@ Following settings can be made in the SysConfig.
 #### Znuny4OTRSAutoSelect###HideFields
 Defines which valid FieldIDs should be hidden if only one value is available.
 
-#### Znuny4OTRSAutoSelect###SelectAlways"
+#### Znuny4OTRSAutoSelect###SelectAlways
 Defines if all valid FieldIDs should be always selected if only one value is available.
 If you activate this function, you can't select an empty value (-).
 

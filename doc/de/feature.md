@@ -20,7 +20,7 @@ In der SysConfig können folgende Einstellungen getätigt werden.
 #### Znuny4OTRSAutoSelect###HideFields
 Legt fest, ob die Felder der validen FieldIDs ausgeblendet werden, wenn nur ein Wert verfügbar ist.
 
-#### Znuny4OTRSAutoSelect###SelectAlways"
+#### Znuny4OTRSAutoSelect###SelectAlways
 Legt fest, ob die Felder der validen FieldIDs immer ausgewählt werden, wenn nur ein Wert verfügbar ist.
 Wenn Sie diese Funktion aktivieren, können Sie keinen leeren Wert wählen (-).
 
