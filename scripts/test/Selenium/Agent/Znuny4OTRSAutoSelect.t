@@ -24,14 +24,6 @@ my $SeleniumTest = sub {
     my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
     my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
 
-    # Usable Snippets (SublimeTextAdjustments):
-    #     otrs.dynamicfield.config.text
-    #     otrs.dynamicfield.config.checkbox
-    #     otrs.dynamicfield.config.datetime
-    #     otrs.dynamicfield.config.dropdown
-    #     otrs.dynamicfield.config.textarea
-    #     otrs.dynamicfield.config.multiselect
-
     my @DynamicFields = (
         {
             Name          => 'Znuny4OTRSAutoSelectTest',
