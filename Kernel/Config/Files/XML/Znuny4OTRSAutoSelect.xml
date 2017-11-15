@@ -69,7 +69,6 @@
         <Value>
             <Array>
                 <Item>Core.Agent.Znuny4OTRSAutoSelect.js</Item>
-                <Item>Core.Form.Znuny4OTRSInput.js</Item>
             </Array>
         </Value>
     </Setting>
@@ -79,7 +78,6 @@
         <Value>
             <Array>
                 <Item>Core.Agent.Znuny4OTRSAutoSelect.js</Item>
-                <Item>Core.Form.Znuny4OTRSInput.js</Item>
             </Array>
         </Value>
     </Setting>
