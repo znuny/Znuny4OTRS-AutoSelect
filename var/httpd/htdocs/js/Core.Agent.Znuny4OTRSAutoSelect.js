@@ -49,6 +49,28 @@ Core.Agent.Znuny4OTRSAutoSelect = (function (TargetNS) {
         Core.App.Subscribe('Event.AJAX.FormUpdate.Callback', function() {
             TargetNS.CheckField(SelectAlways, ConfigHide, Attributes);
         });
+
+        // temporary workaround till OTRS 6 to be able to
+        // react to AJAX Process changes
+        var Action = Core.Config.Get('Action');
+        if (
+            Action
+            && Action === 'CustomerTicketProcess'
+        ) {
+            // backup original function
+            Core.Form.Validate.InitOriginal = Core.Form.Validate.Init;
+
+            // overwrite function with custom hook executor
+            Core.Form.Validate.Init = function (Attribute, Options) {
+
+                // execute our hook to perform
+                // autoselect when the Process form is loadded
+                TargetNS.CheckField(SelectAlways, ConfigHide, Attributes);
+
+                // call original
+                Core.Form.Validate.InitOriginal( Attribute, Options );
+            }
+        }
     }
 
     TargetNS.CheckField = function (SelectAlways, ConfigHide, Attributes) {
