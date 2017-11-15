@@ -108,8 +108,6 @@ Core.Agent.Znuny4OTRSAutoSelect = (function (TargetNS) {
 
                     // store auto selected value for attribute
                     Store[Attribute] = Values[0];
-
-                    return false;
                 }
 
                 // hide field
