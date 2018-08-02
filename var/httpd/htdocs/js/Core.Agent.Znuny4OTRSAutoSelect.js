@@ -1,5 +1,5 @@
 // --
-// Copyright (C) 2012-2017 Znuny GmbH, http://znuny.com/
+// Copyright (C) 2012-2018 Znuny GmbH, http://znuny.com/
 // --
 // This software comes with ABSOLUTELY NO WARRANTY. For details, see
 // the enclosed file COPYING for license information (AGPL). If you
@@ -47,6 +47,9 @@ Core.Agent.Znuny4OTRSAutoSelect = (function (TargetNS) {
 
         // checked everytime
         Core.App.Subscribe('Event.AJAX.FormUpdate.Callback', function() {
+            TargetNS.CheckField(SelectAlways, ConfigHide, Attributes);
+        });
+        Core.App.Subscribe('Event.AJAX.FunctionCall.Callback', function() {
             TargetNS.CheckField(SelectAlways, ConfigHide, Attributes);
         });
 
