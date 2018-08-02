@@ -52,6 +52,7 @@
                             <Item Key="AgentTicketPhoneCommon">1</Item>
                             <Item Key="AgentTicketBulk">1</Item>
                             <Item Key="AgentTicketProcess">1</Item>
+                            <Item Key="AgentTicketProcessSmall">1</Item>
                             <Item Key="CustomerTicketProcess">1</Item>
                             <Item Key="CustomerTicketMessage">1</Item>
                             <Item Key="AgentTicketCompose">1</Item>
