@@ -49,6 +49,9 @@ Core.Agent.Znuny4OTRSAutoSelect = (function (TargetNS) {
         Core.App.Subscribe('Event.AJAX.FormUpdate.Callback', function() {
             TargetNS.CheckField(SelectAlways, ConfigHide, Attributes);
         });
+        Core.App.Subscribe('Event.AJAX.FunctionCall.Callback', function() {
+            TargetNS.CheckField(SelectAlways, ConfigHide, Attributes);
+        });
 
         // checked everytime
         Core.App.Subscribe('TicketProcess.Init.FirstActivityDialog.Load', function() {
