@@ -13,8 +13,6 @@ use warnings;
 
 use Kernel::System::VariableCheck qw(:all);
 
-use JSON;
-
 our @ObjectDependencies = (
     'Kernel::Config',
     'Kernel::Output::HTML::Layout',
