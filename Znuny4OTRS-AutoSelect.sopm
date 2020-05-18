@@ -25,7 +25,7 @@
     <ChangeLog Version="1.0.2" Date="2016-01-14 08:31:42 UTC">Fixed bug: Added return to stop loop earlier.&#13;
 Added hide and show function to Core.Form.Znuny4OTRSInput.</ChangeLog>
     <Framework>6.0.x</Framework>
-    <PackageRequired Version="6.0.3">Znuny4OTRS-Repo</PackageRequired>
+    <PackageRequired Version="6.0.60">Znuny4OTRS-Repo</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
