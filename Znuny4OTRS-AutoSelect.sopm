@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny4OTRS-AutoSelect</Name>
-    <Version>5.0.4</Version>
+    <Version>5.0.5</Version>
+    <ChangeLog Version="5.0.5" Date="2020-05-18 10:11:43 +0200">Tidied code and applied codepolicy.&#13;
+Added addition process templates to outputfilter.</ChangeLog>
     <ChangeLog Version="5.0.4" Date="2018-08-02 11:00:19 +0200">Fixed issue #8 - DynamicField not hidden as expected.</ChangeLog>
     <ChangeLog Version="5.0.3" Date="2017-11-15 09:58:31 +0100">- Fixed bug: Autoselected fields won't get hidden if value changed.&#13;
 - Fixed bug: Autoselect isn't performed for async loaded first Process view.</ChangeLog>
