@@ -2,14 +2,14 @@
 
 Following settings can be made in the SysConfig.
 
-## Znuny4OTRSAutoSelect###HideFields
+## ZnunyAutoSelect###HideFields
 Defines which valid FieldIDs should be hidden if only one value is available.
 
-## Znuny4OTRSAutoSelect###SelectAlways
+## ZnunyAutoSelect###SelectAlways
 Defines if all valid FieldIDs should be always selected if only one value is available.
 If you activate this function, you can't select an empty value (-).
 
-## Znuny4OTRSAutoSelect###FieldIDs
+## ZnunyAutoSelect###FieldIDs
 This configuration registers possible FieldIDs for autoselection. 1 = enabled, 0 = disabled.
 You can also use dynamic fields by adding them to the list of FieldIDs.
 

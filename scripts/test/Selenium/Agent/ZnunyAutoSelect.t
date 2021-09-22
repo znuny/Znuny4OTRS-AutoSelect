@@ -14,20 +14,20 @@ use Kernel::System::VariableCheck qw(:all);
 
 use vars (qw($Self));
 
-# get the Znuny4OTRS Selenium object
+# get the Znuny Selenium object
 my $SeleniumObject = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
 
 # store test function in variable so the Selenium object can handle errors/exceptions/dies etc.
 my $SeleniumTest = sub {
 
-    # initialize Znuny4OTRS Helpers and other needed objects
+    # initialize Znuny Helpers and other needed objects
     my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
     my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
 
     my @DynamicFields = (
         {
-            Name          => 'Znuny4OTRSAutoSelectTest',
-            Label         => "Znuny4OTRSAutoSelectTest",
+            Name          => 'ZnunyAutoSelectTest',
+            Label         => "ZnunyAutoSelectTest",
             ObjectType    => 'Ticket',
             FieldType     => 'Dropdown',
             InternalField => 0,
@@ -48,7 +48,7 @@ my $SeleniumTest = sub {
 
     my %Screens = (
         AgentTicketPhone => {
-            Znuny4OTRSAutoSelectTest => 1,
+            ZnunyAutoSelectTest => 1,
         },
     );
     $ZnunyHelperObject->_DynamicFieldsScreenEnable(%Screens);
@@ -62,10 +62,10 @@ my $SeleniumTest = sub {
         PropertiesDatabase => {},
         Possible           => {
             Ticket => {
-                Queue                                 => ['Raw'],
-                State                                 => ['open'],
-                Priority                              => ['3 normal'],
-                DynamicField_Znuny4OTRSAutoSelectTest => ['Visible'],
+                Queue                            => ['Raw'],
+                State                            => ['open'],
+                Priority                         => ['3 normal'],
+                DynamicField_ZnunyAutoSelectTest => ['Visible'],
             },
         },
         PossibleAdd => {},
@@ -74,18 +74,18 @@ my $SeleniumTest = sub {
 
     $HelperObject->ConfigSettingChange(
         Valid => 1,
-        Key   => 'TicketAcl###23-Znuny4OTRSAutoSelectTest',
+        Key   => 'TicketAcl###23-ZnunyAutoSelectTest',
         Value => $TestACL,
     );
 
     $HelperObject->ConfigSettingChange(
         Valid => 1,
-        Key   => 'Znuny4OTRSAutoSelect###FieldIDs',
+        Key   => 'ZnunyAutoSelect###FieldIDs',
         Value => {
-            PriorityID                            => 1,
-            QueueID                               => 1,
-            StateID                               => 1,
-            DynamicField_Znuny4OTRSAutoSelectTest => 1,
+            PriorityID                       => 1,
+            QueueID                          => 1,
+            StateID                          => 1,
+            DynamicField_ZnunyAutoSelectTest => 1,
         },
     );
 
@@ -100,11 +100,11 @@ my $SeleniumTest = sub {
     );
 
     my %ValueMap = (
-        PriorityID                            => '',
-        QueueID                               => 'Raw',
-        StateID                               => 'open',
-        PriorityID                            => '3 normal',
-        DynamicField_Znuny4OTRSAutoSelectTest => 'Visible',
+        PriorityID                       => '',
+        QueueID                          => 'Raw',
+        StateID                          => 'open',
+        PriorityID                       => '3 normal',
+        DynamicField_ZnunyAutoSelectTest => 'Visible',
     );
 
     for my $Attribute ( sort keys %ValueMap ) {
@@ -131,7 +131,7 @@ my $SeleniumTest = sub {
 
     $HelperObject->ConfigSettingChange(
         Valid => 1,
-        Key   => 'Znuny4OTRSAutoSelect###HideFields',
+        Key   => 'ZnunyAutoSelect###HideFields',
         Value => 1,
     );
 

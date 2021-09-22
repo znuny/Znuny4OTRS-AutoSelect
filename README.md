@@ -1,12 +1,9 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
-
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-AutoSelect/master)
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-AutoSelect/rel-6_1)
 
 AutoSelect
 =================
-
-Automatic selection of an entry from drop down fields hek
 
 This package does an automatic selection of an entry from drop down fields if only one is available. In addition, the field can also be hidden.
 
@@ -27,12 +24,11 @@ This add-on works with all possible settings of the SystemConfiguration `Moderni
 
 **Prerequisites**
 
-- OTRS 6
-- [Znuny4OTRS-Repo](https://www.znuny.com/add-ons/znuny4otrs-repository)
+- Znuny 6.1
 
 **Installation**
 
-Download the [package](https://addons.znuny.com/api/addon_repos/public/1073/latest) and install it via admin interface -> package manager or use [Znuny4OTRS-Repo](https://www.znuny.com/add-ons/znuny4otrs-repository).
+Download the [package](https://addons.znuny.com/api/addon_repos/public/1073/latest) and install it via admin interface -> package manager.
 
 **Configuration**
 
