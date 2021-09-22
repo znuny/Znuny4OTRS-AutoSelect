@@ -14,11 +14,11 @@ Core.Agent = Core.Agent || {};
 
 /**
  * @namespace
- * @exports TargetNS as Core.Agent.Znuny4OTRSAutoSelect
+ * @exports TargetNS as Core.Agent.ZnunyAutoSelect
  * @description
  *      This namespace contains a function for hiding the fields Priority, Queue, Service, SLA, State, Type, Responsible and Owner, if only one value is available.
  */
-Core.Agent.Znuny4OTRSAutoSelect = (function (TargetNS) {
+Core.Agent.ZnunyAutoSelect = (function (TargetNS) {
 
     var Store = {};
 
@@ -67,8 +67,8 @@ Core.Agent.Znuny4OTRSAutoSelect = (function (TargetNS) {
         $.each(Attributes, function(Index, Attribute) {
             var Values = [];
 
-            var RawValues = Core.Form.Znuny4OTRSInput.Get(Attribute, { PossibleValues: true });
-            var FieldID   = Core.Form.Znuny4OTRSInput.FieldID(Attribute);
+            var RawValues = Znuny.Form.Input.Get(Attribute, { PossibleValues: true });
+            var FieldID   = Znuny.Form.Input.FieldID(Attribute);
 
             if (!FieldID) return true;
 
@@ -87,7 +87,7 @@ Core.Agent.Znuny4OTRSAutoSelect = (function (TargetNS) {
             // return if attribute has a stored value
             if(
                 SelectAlways == 0
-                && Core.Form.Znuny4OTRSInput.Get(Attribute) == ''
+                && Znuny.Form.Input.Get(Attribute) == ''
                 && Store[Attribute]
             ) {
                 return true;
@@ -96,8 +96,8 @@ Core.Agent.Znuny4OTRSAutoSelect = (function (TargetNS) {
             if (Values.length == 1) {
 
                 // select option
-                if (Core.Form.Znuny4OTRSInput.Get(Attribute) != Values[0]) {
-                    Core.Form.Znuny4OTRSInput.Set(Attribute, Values[0]);
+                if (Znuny.Form.Input.Get(Attribute) != Values[0]) {
+                    Znuny.Form.Input.Set(Attribute, Values[0]);
 
                     // store auto selected value for attribute
                     Store[Attribute] = Values[0];
@@ -105,15 +105,15 @@ Core.Agent.Znuny4OTRSAutoSelect = (function (TargetNS) {
 
                 // hide field
                 if (ConfigHide == 1) {
-                    Core.Form.Znuny4OTRSInput.Hide(Attribute);
+                    Znuny.Form.Input.Hide(Attribute);
                 }
             }
             else if (ConfigHide == 1) {
                 // select show
-                Core.Form.Znuny4OTRSInput.Show(Attribute);
+                Znuny.Form.Input.Show(Attribute);
             }
         });
     }
 
     return TargetNS;
-}(Core.Agent.Znuny4OTRSAutoSelect || {}));
+}(Core.Agent.ZnunyAutoSelect || {}));

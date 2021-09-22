@@ -6,7 +6,7 @@
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
-package Kernel::Output::HTML::FilterElementPost::Znuny4OTRSAutoSelect;
+package Kernel::Output::HTML::FilterElementPost::ZnunyAutoSelect;
 
 use strict;
 use warnings;
@@ -36,7 +36,7 @@ sub Run {
     my $JSONObject   = $Kernel::OM->Get('Kernel::System::JSON');
     my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
 
-    my $AutoSelectConfig = $ConfigObject->Get('Znuny4OTRSAutoSelect');
+    my $AutoSelectConfig = $ConfigObject->Get('ZnunyAutoSelect');
     return if !IsHashRefWithData($AutoSelectConfig);
 
     my @FieldIDs;
@@ -52,7 +52,7 @@ sub Run {
     );
 
     my $JSBlock = <<"JS";
-Core.Agent.Znuny4OTRSAutoSelect.Init({
+Core.Agent.ZnunyAutoSelect.Init({
     SelectAlways: $AutoSelectConfig->{SelectAlways},
     ConfigHide:   $AutoSelectConfig->{HideFields},
     FieldIDs:     $FieldIDs
@@ -60,7 +60,7 @@ Core.Agent.Znuny4OTRSAutoSelect.Init({
 JS
 
     $LayoutObject->AddJSOnDocumentCompleteIfNotExists(
-        Key  => 'Znuny4OTRSAutoSelect',
+        Key  => 'ZnunyAutoSelect',
         Code => $JSBlock,
     );
 

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
-    <Name>Znuny4OTRS-AutoSelect</Name>
-    <Version>6.0.7</Version>
+    <Name>Znuny-AutoSelect</Name>
+    <Version>6.1.0</Version>
     <ChangeLog Version="6.0.7" Date="2020-05-18 10:03:56 +0200">Added addition process templates to outputfilter.</ChangeLog>
     <ChangeLog Version="6.0.6" Date="2020-03-16 14:55:41 +0100">Tidied code.</ChangeLog>
     <ChangeLog Version="6.0.5" Date="2019-01-17 12:13:08 +0100">Fixed init of auto select JS.</ChangeLog>
     <ChangeLog Version="6.0.4" Date="2018-08-02 11:00:52 +0200">Fixed issue #8 - DynamicField not hidden as expected.</ChangeLog>
     <ChangeLog Version="6.0.3" Date="2018-03-08 10:33:01 +0100">Removed ArticleTypeID because it's not used in OTRS 6 anymore.</ChangeLog>
     <ChangeLog Version="6.0.2" Date="2017-11-15 10:03:04 +0100">- Fixed bug: Autoselect isn't performed for async loaded first Process view.&#13;
-- Removed no longer needed Znuny4OTRSInput registration.</ChangeLog>
+- Removed no longer needed ZnunyInput registration.</ChangeLog>
     <ChangeLog Version="6.0.1" Date="2017-11-14 14:59:02 +0100">Ported to OTRS 6.</ChangeLog>
-    <ChangeLog Version="5.0.2" Date="2017-07-11 11:26:33 +0200">Update Znuny4OTRSAutoSelect.xml - Fixed group.</ChangeLog>
-    <ChangeLog Version="5.0.1" Date="2016-09-21 14:36:24 +0200">Fixed issue #1 - Autoselect automatically shows hidden fields also if Znuny4OTRSAutoSelect###HideFields is not in use.</ChangeLog>
+    <ChangeLog Version="5.0.2" Date="2017-07-11 11:26:33 +0200">Update ZnunyAutoSelect.xml - Fixed group.</ChangeLog>
+    <ChangeLog Version="5.0.1" Date="2016-09-21 14:36:24 +0200">Fixed issue #1 - Autoselect automatically shows hidden fields also if ZnunyAutoSelect###HideFields is not in use.</ChangeLog>
     <ChangeLog Version="1.1.10" Date="2016-03-16 18:40:13 UTC">Changed source for opm generation (gitlab -&gt; github).</ChangeLog>
     <ChangeLog Version="1.1.8" Date="2016-01-28 15:27:05 UTC">Added SelectAlways function.</ChangeLog>
     <ChangeLog Version="1.1.7" Date="2016-01-27 08:58:20 UTC">Fixed issue #4 - outputfilter in wrong directory in otrs 5.</ChangeLog>
@@ -22,21 +22,21 @@
 - Fixed SysConfig groups.&#13;
 - Improved documentations.</ChangeLog>
     <ChangeLog Version="1.1.2" Date="2016-01-14 12:52:12 UTC">Fixed bug: 'not hash element'. Tieded and added documentation for dynamic fields.</ChangeLog>
-    <ChangeLog Version="1.1.1" Date="2016-01-14 08:37:07 UTC">Fixed bug: Added return to stop loop earlier. Added hide and show function to Core.Form.Znuny4OTRSInput.</ChangeLog>
+    <ChangeLog Version="1.1.1" Date="2016-01-14 08:37:07 UTC">Fixed bug: Added return to stop loop earlier. Added hide and show function to Core.Form.ZnunyInput.</ChangeLog>
     <ChangeLog Version="1.0.2" Date="2016-01-14 08:31:42 UTC">Fixed bug: Added return to stop loop earlier.&#13;
-Added hide and show function to Core.Form.Znuny4OTRSInput.</ChangeLog>
-    <Framework>6.0.x</Framework>
-    <PackageRequired Version="6.0.71">Znuny4OTRS-Repo</PackageRequired>
+Added hide and show function to Core.Form.ZnunyInput.</ChangeLog>
+    <Framework>6.1.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">This package contains the functionality to hide the fields Queue, SLA and Service, if only one value is available.</Description>
     <Description Lang="de">Dieses Paket enthält die Funktionalität die Felder Queue, SLA und Service auszublenden, wenn diese nur einen Wert enthalten.</Description>
     <Filelist>
-        <File Permission="660" Location="Kernel/Config/Files/XML/Znuny4OTRSAutoSelect.xml"/>
-        <File Permission="660" Location="Kernel/Language/de_Znuny4OTRSAutoSelect.pm"/>
-        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/Znuny4OTRSAutoSelect.pm"/>
-        <File Permission="660" Location="scripts/test/Selenium/Agent/Znuny4OTRSAutoSelect.t"/>
-        <File Permission="660" Location="var/httpd/htdocs/js/Core.Agent.Znuny4OTRSAutoSelect.js"/>
+        <File Permission="660" Location="Kernel/Config/Files/XML/ZnunyAutoSelect.xml"/>
+        <File Permission="660" Location="Kernel/Language/de_ZnunyAutoSelect.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/ZnunyAutoSelect.pm"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/ZnunyAutoSelect.t"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/Core.Agent.ZnunyAutoSelect.js"/>
     </Filelist>
+    <PackageMerge Name="Znuny4OTRS-AutoSelect" TargetVersion="6.0.7"></PackageMerge>
 </otrs_package>
