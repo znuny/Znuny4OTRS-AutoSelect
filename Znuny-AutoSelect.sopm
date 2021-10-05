@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny-AutoSelect</Name>
-    <Version>6.1.0</Version>
+    <Version>6.1.1</Version>
+    <ChangeLog Version="6.1.1" Date="2021-10-05 08:33:50 +0200">Ported to 6.1.</ChangeLog>
     <ChangeLog Version="6.0.7" Date="2020-05-18 10:03:56 +0200">Added addition process templates to outputfilter.</ChangeLog>
     <ChangeLog Version="6.0.6" Date="2020-03-16 14:55:41 +0100">Tidied code.</ChangeLog>
     <ChangeLog Version="6.0.5" Date="2019-01-17 12:13:08 +0100">Fixed init of auto select JS.</ChangeLog>
@@ -38,5 +39,5 @@ Added hide and show function to Core.Form.ZnunyInput.</ChangeLog>
         <File Permission="660" Location="scripts/test/Selenium/Agent/ZnunyAutoSelect.t"/>
         <File Permission="660" Location="var/httpd/htdocs/js/Core.Agent.ZnunyAutoSelect.js"/>
     </Filelist>
-    <PackageMerge Name="Znuny4OTRS-AutoSelect" TargetVersion="6.0.7"></PackageMerge>
+    <PackageMerge Name="Znuny4OTRS-AutoSelect" TargetVersion="6.0.7"/>
 </otrs_package>
