@@ -1,6 +1,6 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-AutoSelect/rel-6_2)
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-AutoSelect/dev)
 
 AutoSelect
 =================
@@ -28,7 +28,7 @@ This add-on works with all possible settings of the SystemConfiguration `Moderni
 
 **Installation**
 
-Download the [package](https://addons.znuny.com/api/addon_repos/public/1073/latest) and install it via admin interface -> package manager.
+Download the [package](https://addons.znuny.com/api/addon_repos/public/1130/latest) and install it via admin interface -> package manager.
 
 **Configuration**
 
@@ -36,7 +36,7 @@ No further configuration required.
 
 **Download**
 
-Download the [latest version](https://addons.znuny.com/api/addon_repos/public/1073/latest).
+Download the [latest version](https://addons.znuny.com/api/addon_repos/public/1130/latest).
 
 **Commercial Support**
 

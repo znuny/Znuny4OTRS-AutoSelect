@@ -36,7 +36,21 @@ Added hide and show function to Core.Form.ZnunyInput.</ChangeLog>
         <File Permission="660" Location="Kernel/Language/de_ZnunyAutoSelect.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/ZnunyAutoSelect.pm"/>
         <File Permission="660" Location="scripts/test/Selenium/Agent/ZnunyAutoSelect.t"/>
+        <File Permission="660" Location="scripts/test/ZnunyAutoSelect/var/packagesetup/ZnunyAutoSelect.t"/>
         <File Permission="660" Location="var/httpd/htdocs/js/Core.Agent.ZnunyAutoSelect.js"/>
+        <File Permission="660" Location="var/packagesetup/ZnunyAutoSelect.pm"/>
     </Filelist>
+    <CodeReinstall Type="post"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::ZnunyAutoSelect')->CodeReinstall();
+    ]]></CodeReinstall>
+    <CodeInstall Type="post"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::ZnunyAutoSelect')->CodeInstall();
+    ]]></CodeInstall>
+    <CodeUninstall Type="pre"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::ZnunyAutoSelect')->CodeUninstall();
+    ]]></CodeUninstall>
+    <CodeUpgrade Type="post"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::ZnunyAutoSelect')->CodeUpgrade();
+    ]]></CodeUpgrade>
     <PackageMerge Name="Znuny4OTRS-AutoSelect" TargetVersion="6.0.7"></PackageMerge>
 </otrs_package>
