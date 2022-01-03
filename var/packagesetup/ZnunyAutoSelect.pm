@@ -6,7 +6,7 @@
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
-package var::packagesetup::ZnunyAutoSelect;     ## no critic
+package var::packagesetup::ZnunyAutoSelect;    ## no critic
 
 use strict;
 use warnings;
@@ -24,7 +24,7 @@ use Kernel::System::VariableCheck qw(:all);
 
 =head1 NAME
 
-ZnunyAutoSelect.pm - code to execute during package installation
+var::packagesetup::ZnunyAutoSelect - code to execute during package installation
 
 =head1 SYNOPSIS
 
@@ -115,8 +115,6 @@ sub CodeUninstall {
     return 1;
 }
 
-
-
 =head2 _MigrateSysConfigSettings()
 
 Migrates SysConfig settings to 6.1.
@@ -191,6 +189,5 @@ sub _MigrateSysConfigSettings {
 
     return 1;
 }
-
 
 1;
