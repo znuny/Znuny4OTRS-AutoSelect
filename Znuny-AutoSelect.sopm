@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny-AutoSelect</Name>
-    <Version>6.1.0</Version>
+    <Version>6.2.1</Version>
+    <ChangeLog Version="6.2.1" Date="2022-01-03 12:56:01 +0100">Ported to OTRS 6.2.</ChangeLog>
     <ChangeLog Version="6.0.7" Date="2020-05-18 10:03:56 +0200">Added addition process templates to outputfilter.</ChangeLog>
     <ChangeLog Version="6.0.6" Date="2020-03-16 14:55:41 +0100">Tidied code.</ChangeLog>
     <ChangeLog Version="6.0.5" Date="2019-01-17 12:13:08 +0100">Fixed init of auto select JS.</ChangeLog>
@@ -52,5 +53,5 @@ Added hide and show function to Core.Form.ZnunyInput.</ChangeLog>
     <CodeUpgrade Type="post"><![CDATA[
         $Kernel::OM->Get('var::packagesetup::ZnunyAutoSelect')->CodeUpgrade();
     ]]></CodeUpgrade>
-    <PackageMerge Name="Znuny4OTRS-AutoSelect" TargetVersion="6.0.7"></PackageMerge>
+    <PackageMerge Name="Znuny4OTRS-AutoSelect" TargetVersion="6.0.7"/>
 </otrs_package>
