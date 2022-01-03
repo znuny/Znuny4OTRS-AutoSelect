@@ -14,10 +14,9 @@ use warnings;
 use utf8;
 
 our @ObjectDependencies = (
-    'Kernel::System::GeneralCatalog',
-    'Kernel::System::ITSMConfigItem',
-    'Kernel::System::State',
-    'Kernel::System::Valid',
+    'Kernel::Config',
+    'Kernel::System::Log',
+    'Kernel::System::SysConfig',
     'Kernel::System::ZnunyHelper',
 );
 
