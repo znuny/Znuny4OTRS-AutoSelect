@@ -24,11 +24,11 @@ This add-on works with all possible settings of the SystemConfiguration `Moderni
 
 **Prerequisites**
 
-- Znuny 6.2
+- Znuny 6.3
 
 **Installation**
 
-Download the [package](https://addons.znuny.com/api/addon_repos/public/1130/latest) and install it via admin interface -> package manager.
+Use the online repository or download the [package](https://addons.znuny.com/api/addon_repos/public/2188/latest) and install it via admin interface -> package manager.
 
 **Configuration**
 
@@ -36,7 +36,7 @@ No further configuration required.
 
 **Download**
 
-Download the [latest version](https://addons.znuny.com/api/addon_repos/public/1130/latest).
+Download the [latest version](https://addons.znuny.com/api/addon_repos/public/2188/latest).
 
 **Commercial Support**
 
