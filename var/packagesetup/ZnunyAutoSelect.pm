@@ -168,7 +168,7 @@ sub _MigrateSysConfigSettings {
 
         my $NewSysConfigOptionNames = $RenamedSysConfigOptions{$OriginalSysConfigOptionName};
         for my $NewSysConfigOptionName ( @{$NewSysConfigOptionNames} ) {
-            my $SettingUpdated = $Self->SettingUpdate(
+            my $SettingUpdated = $SysConfigObject->SettingUpdate(
                 Name           => $NewSysConfigOptionName,
                 IsValid        => 1,
                 EffectiveValue => $OriginalSysConfigOptionValue,
