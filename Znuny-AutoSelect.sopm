@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny-AutoSelect</Name>
-    <Version>6.3.3</Version>
+    <Version>6.4.1</Version>
+    <ChangeLog Version="6.4.1" Date="2022-07-27 22:17:00 +0200">initial release for Znuny 6.4</ChangeLog>
     <ChangeLog Version="6.3.3" Date="2022-06-10 11:06:17 +0200">Fixed SysConfig migration in package setup.</ChangeLog>
     <ChangeLog Version="6.3.2" Date="2022-06-10 08:55:56 +0200">Fixed SysConfig function call in package setup.</ChangeLog>
     <ChangeLog Version="6.3.1" Date="2022-03-16 11:05:02 +0100">Initial release for Znuny 6.3.</ChangeLog>
@@ -28,7 +29,7 @@
     <ChangeLog Version="1.1.1" Date="2016-01-14 08:37:07 UTC">Fixed bug: Added return to stop loop earlier. Added hide and show function to Core.Form.ZnunyInput.</ChangeLog>
     <ChangeLog Version="1.0.2" Date="2016-01-14 08:31:42 UTC">Fixed bug: Added return to stop loop earlier.&#13;
 Added hide and show function to Core.Form.ZnunyInput.</ChangeLog>
-    <Framework>6.3.x</Framework>
+    <Framework>6.4.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
