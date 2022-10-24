@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny-AutoSelect</Name>
-    <Version>6.3.1</Version>
+    <Version>6.3.3</Version>
+    <ChangeLog Version="6.3.3" Date="2022-06-10 11:06:17 +0200">Fixed SysConfig migration in package setup.</ChangeLog>
+    <ChangeLog Version="6.3.2" Date="2022-06-10 08:55:56 +0200">Fixed SysConfig function call in package setup.</ChangeLog>
     <ChangeLog Version="6.3.1" Date="2022-03-16 11:05:02 +0100">Initial release for Znuny 6.3.</ChangeLog>
     <ChangeLog Version="6.0.7" Date="2020-05-18 10:03:56 +0200">Added addition process templates to outputfilter.</ChangeLog>
     <ChangeLog Version="6.0.6" Date="2020-03-16 14:55:41 +0100">Tidied code.</ChangeLog>
