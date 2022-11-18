@@ -2,6 +2,12 @@
 <otrs_package version="1.0">
     <Name>Znuny-AutoSelect</Name>
     <Version>6.4.1</Version>
+    <Framework>6.4.x</Framework>
+    <Vendor>Znuny GmbH</Vendor>
+    <URL>http://znuny.com/</URL>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <Description Lang="en">This package contains the functionality to hide the fields Queue, SLA and Service, if only one value is available.</Description>
+    <Description Lang="de">Dieses Paket enthält die Funktionalität die Felder Queue, SLA und Service auszublenden, wenn diese nur einen Wert enthalten.</Description>
     <ChangeLog Version="6.4.1" Date="2022-07-27 22:17:00 +0200">initial release for Znuny 6.4</ChangeLog>
     <ChangeLog Version="6.3.3" Date="2022-06-10 11:06:17 +0200">Fixed SysConfig migration in package setup.</ChangeLog>
     <ChangeLog Version="6.3.2" Date="2022-06-10 08:55:56 +0200">Fixed SysConfig function call in package setup.</ChangeLog>
@@ -29,12 +35,6 @@
     <ChangeLog Version="1.1.1" Date="2016-01-14 08:37:07 UTC">Fixed bug: Added return to stop loop earlier. Added hide and show function to Core.Form.ZnunyInput.</ChangeLog>
     <ChangeLog Version="1.0.2" Date="2016-01-14 08:31:42 UTC">Fixed bug: Added return to stop loop earlier.&#13;
 Added hide and show function to Core.Form.ZnunyInput.</ChangeLog>
-    <Framework>6.4.x</Framework>
-    <Vendor>Znuny GmbH</Vendor>
-    <URL>http://znuny.com/</URL>
-    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
-    <Description Lang="en">This package contains the functionality to hide the fields Queue, SLA and Service, if only one value is available.</Description>
-    <Description Lang="de">Dieses Paket enthält die Funktionalität die Felder Queue, SLA und Service auszublenden, wenn diese nur einen Wert enthalten.</Description>
     <Filelist>
         <File Permission="660" Location="Kernel/Config/Files/XML/ZnunyAutoSelect.xml"/>
         <File Permission="660" Location="Kernel/Language/de_ZnunyAutoSelect.pm"/>
