@@ -1,6 +1,6 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-AutoSelect/rel-6_4)
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-AutoSelect/rel-6_5)
 
 AutoSelect
 =================
@@ -24,7 +24,7 @@ This add-on works with all possible settings of the SystemConfiguration `Moderni
 
 **Prerequisites**
 
-- Znuny 6.4
+- Znuny 6.5
 
 **Installation**
 
