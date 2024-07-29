@@ -1,42 +1,34 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-AutoSelect/rel-7_0)
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-AutoSelect/rel-7_1)
 
-AutoSelect
-=================
+Znuny-AutoSelect
+================
 
-This package does an automatic selection of an entry from drop down fields if only one entry is available. In addition, the field can also be hidden.
+This package contains the functionality to select the following fields if only one value is available. They can be hidden too.
 
-The following fields in the agent and customer interface are supported:
-
- - Dynamic Fields (Dropdown)
- - Owner
  - Priority
- - ProcessEntity
  - Queue
- - Responsible
  - Service
  - SLA
  - State
  - Type
-
-This add-on works with all possible settings of the SystemConfiguration `ModernizeFormFields` and `ModernizeCustomerFormFields`.
+ - Responsible
+ - Owner
+ - ArticleType
+ - ProcessEntity
 
 **Prerequisites**
 
-- Znuny LTS 6.5
+- Znuny 7.1
 
 **Installation**
 
-Use the online repository or download the [package](https://addons.znuny.com/api/addon_repos/public/2751/latest) and install it via admin interface -> package manager.
+Use the online repository **Znuny Open Source Add-ons** from the package manager to install the add-on. From the command line use this command: `bin/znuny.Console.pl Admin::Package::Install  https://addons.znuny.com/public/:Znuny-AutoSelect`
 
 **Configuration**
 
 No further configuration required.
-
-**Download**
-
-Download the [latest version](https://addons.znuny.com/api/addon_repos/public/2751/latest).
 
 **Commercial Support**
 
