@@ -1,6 +1,6 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-AutoSelect/rel-7_1)
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-AutoSelect/rel-7_2)
 
 Znuny-AutoSelect
 ================
@@ -20,7 +20,7 @@ This package contains the functionality to select the following fields if only o
 
 **Prerequisites**
 
-- Znuny 7.1
+- Znuny 7.2
 
 **Installation**
 
