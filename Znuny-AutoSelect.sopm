@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny-AutoSelect</Name>
-    <Version>7.3.1</Version>
+    <Version>7.3.2</Version>
     <Framework>7.3.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">Hides certain dropdown input fields, if they only contain one selectable value.</Description>
     <Description Lang="de">Blendet bestimmte Dropdown-Eingabefelder aus, sofern diese nur einen wählbaren Wert enthalten.</Description>
+    <ChangeLog Version="7.3.2" Date="2026-01-15 11:49:34 +0100">Initial release for Znuny 7.3.</ChangeLog>
     <ChangeLog Version="7.3.1" Date="2026-01-15 11:48:10 +0100">Initial release for Znuny 7.3.</ChangeLog>
     <ChangeLog Version="7.2.1" Date="2025-09-04 12:16:09 +0200">Initial release for Znuny 7.2.</ChangeLog>
     <ChangeLog Version="7.1.1" Date="2024-07-30 08:49:23 +0200">Initial release for Znuny 7.1.</ChangeLog>
